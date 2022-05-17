@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Test</title>
+</head>
+
+<body>
+    <form>
+        <h1>Register Page</h1>
+
+        <!--Text Input-->
+        <label for="First Name">First Name</label>
+        <input type="text" placeholder="Enter your first name" required /> </br>
+
+        <label for="Last Name">Last Name</label>
+        <input type="text" placeholder="Enter your last name" required /> </br>
+
+        <!--Email Input-->
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Enter your email" required /> </br>
+
+        <!--Password Input-->
+        <label for="Password">Password</label>
+        <input type="password" placeholder="Enter your password" required /> </br>
+
+        <label for="Password">Password</label>
+        <input type="password" placeholder="Confirm your password" required /> </br>
+
+        <!--Radio Input With Hacky Styling-->
+        <p style="display:inline">Gender</p>
+        <label for="male">
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label for="female">
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+        </label>
+
+        <!--Checkbox Input-->
+        <label for="habits">habit 1
+            <input type="checkbox" required /> </br>
+        </label>
+
+        <label for="habits">habit 2
+            <input type="checkbox" required /> </br>
+        </label>
+
+
+
+        <button type="submit">Submit</button>
+
+        <!-- 
+            NOTE: Submitting a form like this will refresh the page by default, Which is fine for this example.
+            In a real world application, we would likely want to intercept the submit event and customize it's behavoir, 
+            such as preventing a refresh.
+        -->
+    </form>
+
+
+</body>
+
+</html>
